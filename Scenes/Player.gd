@@ -84,7 +84,7 @@ func _physics_process(delta):
 		
 	
 	move_and_slide()
-
+#testy
 #function actually implements headbob using sine wave
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
