@@ -1,14 +1,8 @@
 extends CharacterBody3D
 
 
-
-
-
 ###Player###
 @export var player_health = 100
-
-
-
 
 ####Player Movement###
 var speed
@@ -77,7 +71,7 @@ func _physics_process(delta):
 	
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)
-	
+
 #This portion prints opening to the log if player presses the interact key while also looking at a collision object
 	if player_interact.is_colliding() and Input.is_action_just_pressed("Interact"):
 		print("Opening")
@@ -86,7 +80,7 @@ func _physics_process(delta):
 			interactedtest.cratetest("fack")
 	
 	move_and_slide()
-#testy
+
 #function actually implements headbob using sine wave
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
