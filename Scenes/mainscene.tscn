@@ -22,7 +22,7 @@ albedo_color = Color(0.0745098, 1, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgrdu"]
 albedo_texture = ExtResource("1_nsc2o")
-texture_filter = 0
+texture_filter = 4
 texture_repeat = false
 
 [node name="Environment" type="Node3D"]
