@@ -6,10 +6,11 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6e8c1"]
 
-[node name="Player" type="Node3D"]
+[node name="Player" type="Node3D" groups=["player"]]
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05421, 0)
+collision_layer = 2
 script = ExtResource("1_d5h4e")
 
 [node name="PlayerCapsule" type="MeshInstance3D" parent="Player"]
