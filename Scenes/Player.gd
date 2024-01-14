@@ -14,7 +14,7 @@ var speed
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
-#@onready var player_interact = $Head/Camera3D/PlayerInteract
+@onready var player_interact = $Head/Camera3D/PlayerInteract
 @onready var player_groundcamera = $GroundCheck
 #Headbobbing 
 var bob_freq = 4.5
@@ -71,15 +71,21 @@ func _physics_process(delta):
 	
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)
-
-#This portion prints opening to the log if player presses the interact key while also looking at a collision object
-#	if player_interact.is_colliding() and Input.is_action_just_pressed("Interact"):
-#		print("Opening")
-#		var interactedtest = player_interact.get_collider().get_parent()
-#		if "cratetest" in interactedtest :
-#			interactedtest.cratetest("fack")
-	
 	move_and_slide()
+	
+func _process(delta):
+	#This portion prints opening to the log if player presses the interact key while also looking at a collision object
+	if player_interact.is_colliding() and Input.is_action_just_pressed("Interact"):
+		print("Attempting interaction...")
+		var interaction_target = player_interact.get_collider()
+		if interaction_target:
+			if interaction_target.has_method("on_interact"):
+				var res = interaction_target.on_interact(self, player_interact)
+				print("Interaction success: %s" % [res])
+			else:
+				print("Target %s is not interactable" % [interaction_target])
+		else:
+			print("No interaction target")
 
 #function actually implements headbob using sine wave
 func _headbob(time) -> Vector3:
