@@ -1,7 +1,6 @@
 extends Node3D
 
-var crate = 5
-
-func cratetest(data):
-	print("Openedme")
-	print(data)
+#func _physics_process(delta):
+#	var player_interact = $Player/Head/Camera3D/PlayerInteract
+#	if player_interact.is_colliding() and Input.is_action_just_pressed("Interact"):
+#		print("success")

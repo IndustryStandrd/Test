@@ -14,7 +14,7 @@ var speed
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
-@onready var player_interact = $Head/Camera3D/PlayerInteract
+#@onready var player_interact = $Head/Camera3D/PlayerInteract
 @onready var player_groundcamera = $GroundCheck
 #Headbobbing 
 var bob_freq = 4.5
@@ -73,11 +73,11 @@ func _physics_process(delta):
 	camera.transform.origin = _headbob(t_bob)
 
 #This portion prints opening to the log if player presses the interact key while also looking at a collision object
-	if player_interact.is_colliding() and Input.is_action_just_pressed("Interact"):
-		print("Opening")
-		var interactedtest = player_interact.get_collider().get_parent()
-		if "cratetest" in interactedtest :
-			interactedtest.cratetest("fack")
+#	if player_interact.is_colliding() and Input.is_action_just_pressed("Interact"):
+#		print("Opening")
+#		var interactedtest = player_interact.get_collider().get_parent()
+#		if "cratetest" in interactedtest :
+#			interactedtest.cratetest("fack")
 	
 	move_and_slide()
 
