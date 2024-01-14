@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://ckctf87wmuhkw"]
+[gd_scene load_steps=10 format=3 uid="uid://ckctf87wmuhkw"]
 
 [ext_resource type="Texture2D" uid="uid://dgn8f0ygbtudd" path="res://Assets/Textures/wood.png" id="1_nsc2o"]
 [ext_resource type="PackedScene" uid="uid://dco7iuj7hxyyu" path="res://Scenes/player.tscn" id="2_uogh3"]
 [ext_resource type="PackedScene" uid="uid://1ulg80xilepj" path="res://Scenes/crate.tscn" id="3_ux8m8"]
+[ext_resource type="PackedScene" uid="uid://cltqq5ksqrbls" path="res://Scenes/door.tscn" id="4_0klxc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ukkco"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -80,3 +81,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3974, 0.496696, 11.6154)
 
 [node name="Crate3" parent="." instance=ExtResource("3_ux8m8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.00708, 0.496696, 6.87)
+
+[node name="door" parent="." instance=ExtResource("4_0klxc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.483864, 5)
