@@ -28,3 +28,6 @@ func close() -> void:
 	audio_player.play()
 	print("closed crate")
 	is_open = false
+
+func printtest():
+	print("printy")
