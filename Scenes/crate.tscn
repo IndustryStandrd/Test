@@ -1,13 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://1ulg80xilepj"]
+[gd_scene load_steps=3 format=3 uid="uid://1ulg80xilepj"]
 
-[ext_resource type="Script" path="res://Scenes/crate.gd" id="1_yj228"]
-[ext_resource type="Script" path="res://Scenes/cratetest.gd" id="2_j14yj"]
+[ext_resource type="Script" path="res://Scenes/crate.gd" id="2_j14yj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ughrn"]
 albedo_color = Color(0.34902, 0.243137, 0.0745098, 1)
 
 [node name="Crate" type="Node3D" groups=["openable_containers"]]
-script = ExtResource("1_yj228")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(0.7, 0, 0, 0, 0.52, 0, 0, 0, 1, 0, 0.3, 0)
