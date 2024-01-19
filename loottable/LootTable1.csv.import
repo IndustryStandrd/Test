@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://y6jsyras6341"
+
+[deps]
+
+files=["res://loottable/LootTable1.Name.translation", "res://loottable/LootTable1.Texture.translation", "res://loottable/LootTable1.Category.translation", "res://loottable/LootTable1.SubCategory.translation", "res://loottable/LootTable1.Description.translation"]
+
+source_file="res://loottable/LootTable1.csv"
+dest_files=["res://loottable/LootTable1.Name.translation", "res://loottable/LootTable1.Texture.translation", "res://loottable/LootTable1.Category.translation", "res://loottable/LootTable1.SubCategory.translation", "res://loottable/LootTable1.Description.translation"]
+
+[params]
+
+compress=true
+delimiter=0

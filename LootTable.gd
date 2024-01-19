@@ -2,8 +2,8 @@ extends Node
 class_name LootTable
 
 var food_category = {
-	'frozen' : ['ice cream', 'frozen pizza'],
-	'fresh' : ['apple', 'milk']
+	'canned' : ['ice cream', 'frozen pizza'],
+	'fresh' : ['apple', 'bread']
 }
 
 var weapons_category = {
