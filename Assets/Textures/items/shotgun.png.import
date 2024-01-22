@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc5osrvbpbk57"
-path="res://.godot/imported/carbattery.png-f2ff4004a80e0f75d70de1000906ac2e.ctex"
+uid="uid://cyu0mtht2iwwd"
+path="res://.godot/imported/shotgun.png-69d89490eb54a9260a72af60c8663754.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/Sprites/carbattery.png"
-dest_files=["res://.godot/imported/carbattery.png-f2ff4004a80e0f75d70de1000906ac2e.ctex"]
+source_file="res://Assets/Textures/items/shotgun.png"
+dest_files=["res://.godot/imported/shotgun.png-69d89490eb54a9260a72af60c8663754.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

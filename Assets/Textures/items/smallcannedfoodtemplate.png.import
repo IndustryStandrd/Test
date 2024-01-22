@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8ro6rlkfadii"
-path="res://.godot/imported/motherboard.png-fdf737de023c3c0ebd4457ceb6ea3708.ctex"
+uid="uid://cj1ibdr57mils"
+path="res://.godot/imported/smallcannedfoodtemplate.png-7b9e942a54423bda604960f42ab9efa4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/Sprites/motherboard.png"
-dest_files=["res://.godot/imported/motherboard.png-fdf737de023c3c0ebd4457ceb6ea3708.ctex"]
+source_file="res://Assets/Textures/items/smallcannedfoodtemplate.png"
+dest_files=["res://.godot/imported/smallcannedfoodtemplate.png-7b9e942a54423bda604960f42ab9efa4.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

@@ -87,6 +87,19 @@ func _process(delta):
 		else:
 			print("No interaction target")
 
+#Implementing footsteps - player_groundcamera is the raycast for the player that aims at the ground
+#will be used to check which group the ground they are on top of is part of and play the correct footsteps
+	if player_groundcamera.is_colliding():
+		var player_terrain = player_groundcamera.get_collider().get_parent()
+		print("I am on the ground")
+	else: 
+		print("I am not on the ground")
+
+#Function will hold player footsteps and how where they should play
+func player_footsteps():
+	null
+
+
 #function actually implements headbob using sine wave
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO

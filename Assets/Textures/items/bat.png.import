@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db2ybp3xbkab3"
-path="res://.godot/imported/gun.png-50f2e0770f9c683eb029564ec0eaa0a9.ctex"
+uid="uid://bhhm53bh5wf5d"
+path="res://.godot/imported/bat.png-10ea0de28ee3afbaf9f53d9ea9b1f580.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/Sprites/gun.png"
-dest_files=["res://.godot/imported/gun.png-50f2e0770f9c683eb029564ec0eaa0a9.ctex"]
+source_file="res://Assets/Textures/items/bat.png"
+dest_files=["res://.godot/imported/bat.png-10ea0de28ee3afbaf9f53d9ea9b1f580.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
