@@ -1,14 +1,14 @@
-ID,Name,Texture,Category,SubCategory,Description
-0,Pistol,pistol.png,Weapon,Ranged,Sidearm
-1,Shotgun,shotgun.png,Weapon,Ranged,A shotgun
-2,Bat,bat.png,Weapon,Melee,A Baseball Bat
-3,Axe,axe.png,Weapon,Melee,A fireaxe
-4,Canned Potatoes,cpotatoes.png,Food,Canned,A can of potatoes
-5,Canned Beans,cbeans.png,Food,Canned,A can of beans
-6,Apple,apple.png,Food,Fresh,A freshish Apple
-7,Bread,bread.png,Food,Fresh,Some bread
-8,Hammer,hammer.png,Tools,Tool,A hammer
-9,Nails,nails.png,Resources,Fasteners,To be hammered
-10,Scrap Wood,scrapwood.png,Resources,Junk,Junk wood
-11,Soldering Iron,solderingiron.png,Tools,Tool,Solders iron or something
-12,Capacitors,capacitors.png,Resources,eJunk,Capacitors from a circuit board
+ID,DropChance,Name,Texture,Category,SubCategory,Description
+0,0.05,Pistol,pistol.png,Weapon,Ranged,Sidearm
+1,0.04,Shotgun,shotgun.png,Weapon,Ranged,A shotgun
+2,0.1,Bat,bat.png,Weapon,Melee,A Baseball Bat
+3,0.2,Axe,axe.png,Weapon,Melee,A fireaxe
+4,0.3,Canned Potatoes,cpotatoes.png,Food,Canned,A can of potatoes
+5,0.3,Canned Beans,cbeans.png,Food,Canned,A can of beans
+6,0.3,Apple,apple.png,Food,Fresh,A freshish Apple
+7,0.3,Bread,bread.png,Food,Fresh,Some bread
+8,0.2,Hammer,hammer.png,Tools,Tool,A hammer
+9,0.4,Nails,nails.png,Resources,Fasteners,To be hammered
+10,0.5,Scrap Wood,scrapwood.png,Resources,Junk,Junk wood
+11,0.1,Soldering Iron,solderingiron.png,Tools,Tool,Solders iron or something
+12,0.05,Capacitors,capacitors.png,Resources,eJunk,Capacitors from a circuit board
