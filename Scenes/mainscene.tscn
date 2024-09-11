@@ -1,9 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://ckctf87wmuhkw"]
+[gd_scene load_steps=14 format=3 uid="uid://ckctf87wmuhkw"]
 
 [ext_resource type="Texture2D" uid="uid://dgn8f0ygbtudd" path="res://Assets/Textures/wood.png" id="1_nsc2o"]
+[ext_resource type="AudioStream" uid="uid://bp25tvfej0wn8" path="res://Assets/Sounds/music/eerie-music-whisper-in-the-dark-213943.mp3" id="1_ttv5l"]
 [ext_resource type="PackedScene" uid="uid://dco7iuj7hxyyu" path="res://Scenes/player.tscn" id="2_uogh3"]
 [ext_resource type="PackedScene" uid="uid://1ulg80xilepj" path="res://Scenes/crate.tscn" id="3_ux8m8"]
 [ext_resource type="PackedScene" uid="uid://cltqq5ksqrbls" path="res://Scenes/door.tscn" id="4_0klxc"]
+[ext_resource type="PackedScene" uid="uid://clllqin7bjjbu" path="res://Scenes/wood_create.tscn" id="6_da6d3"]
+[ext_resource type="Script" path="res://Scenes/skybox.gd" id="7_m0q57"]
+[ext_resource type="PackedScene" uid="uid://p7rvn1tob52e" path="res://Assets/Models/furniture/PCtower.glb" id="8_e5ram"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ukkco"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -36,10 +40,15 @@ environment = SubResource("Environment_f6y6o")
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_ttv5l")
+autoplay = true
+parameters/looping = true
+
 [node name="Player" parent="." instance=ExtResource("2_uogh3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0783747, 1.32729, 0.0245416)
 
-[node name="Objects" type="Node3D" parent="."]
+[node name="Objects" type="Node3D" parent="." groups=["FootStepGroups"]]
 
 [node name="Box4" type="CSGBox3D" parent="Objects"]
 transform = Transform3D(4, 0, 0, 0, 2.64, 0, 0, 0, 3.698, 0, 3, -3)
@@ -85,3 +94,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.00708, 0.496696, 6.87)
 
 [node name="door" parent="." instance=ExtResource("4_0klxc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.483864, 5)
+
+[node name="WoodCreate" parent="." instance=ExtResource("6_da6d3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.30372, 0.496696, 8.4946)
+
+[node name="WoodCreate2" parent="." instance=ExtResource("6_da6d3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.77517, 0.496696, 9.09447)
+
+[node name="WoodCreate3" parent="." instance=ExtResource("6_da6d3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.72111, 1.73089, 8.94672)
+
+[node name="Skybox" type="MeshInstance3D" parent="."]
+script = ExtResource("7_m0q57")
+
+[node name="PCtower2" parent="." instance=ExtResource("8_e5ram")]
+transform = Transform3D(0.379006, 0, -0.242599, 0, 0.45, 0, 0.242599, 0, 0.379006, -0.693397, 0.504786, 8.50116)

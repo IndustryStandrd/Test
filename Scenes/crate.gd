@@ -39,4 +39,3 @@ func close() -> void:
 func crate_inventory():
 	print(crate_contents)
 	
-

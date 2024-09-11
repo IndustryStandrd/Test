@@ -8,3 +8,4 @@ func on_interact(interactor, interaction_raycast) -> bool:
 
 func open() -> void:
 	print("opened door")
+	get_tree().change_scene_to_file("res://Scenes/level_2_test.tscn")

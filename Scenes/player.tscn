@@ -35,3 +35,5 @@ collide_with_areas = true
 debug_shape_custom_color = Color(0.768627, 0.247059, 0.909804, 1)
 debug_shape_thickness = 1
 script = ExtResource("2_3575x")
+
+[node name="FootSteps" type="AudioStreamPlayer3D" parent="Player"]

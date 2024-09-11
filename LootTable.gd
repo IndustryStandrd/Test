@@ -15,4 +15,3 @@ var junk_category = {
 	'electronics' : ['motherboard', 'capacitors'],
 	'tools' : ['hammer', 'saw']
 }
-

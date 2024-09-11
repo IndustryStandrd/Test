@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://lpbivw1virgp"]
+
+[ext_resource type="PackedScene" uid="uid://dco7iuj7hxyyu" path="res://Scenes/player.tscn" id="1_3coyn"]
+
+[sub_resource type="Environment" id="Environment_pmwu8"]
+
+[node name="level2test" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pmwu8")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.38437, -0.274242, -0.60562)
+use_collision = true
+size = Vector3(6.88763, 0.246582, 6.63965)
+
+[node name="Player" parent="." instance=ExtResource("1_3coyn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.882785, 0, -0.0476305)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.814703, 0.579879, 0, -0.579879, 0.814703, 0, 4.46872, 6.50998)

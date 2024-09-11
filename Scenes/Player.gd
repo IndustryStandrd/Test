@@ -34,7 +34,7 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * sensitivity)
 		camera.rotate_x(-event.relative.y * sensitivity)
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-80), deg_to_rad(60))
 		
 
 
@@ -91,11 +91,11 @@ func _process(delta):
 #will be used to check which group the ground they are on top of is part of and play the correct footsteps
 	if player_groundcamera.is_colliding():
 		var player_terrain = player_groundcamera.get_collider().get_parent()
-		print("I am on the ground")
-	else: 
-		print("I am not on the ground")
+#		print("I am on the ground")
+#	else: 
+#		print("I am not on the ground")
 
-#Function will hold player footsteps and how where they should play
+#Function will hold player footsteps and where they should play
 func player_footsteps():
 	null
 
