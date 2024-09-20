@@ -18,9 +18,8 @@ scale_max = 0.06
 turbulence_enabled = true
 turbulence_noise_strength = 0.67
 turbulence_noise_scale = 2.832
-collision_mode = 2
 
-[sub_resource type="SphereMesh" id="SphereMesh_h1yfq"]
+[sub_resource type="BoxMesh" id="BoxMesh_dbgxh"]
 
 [node name="SnowWeather" type="Node3D"]
 
@@ -30,4 +29,4 @@ amount = 20000
 lifetime = 6.0
 fixed_fps = 15
 process_material = SubResource("ParticleProcessMaterial_wy212")
-draw_pass_1 = SubResource("SphereMesh_h1yfq")
+draw_pass_1 = SubResource("BoxMesh_dbgxh")

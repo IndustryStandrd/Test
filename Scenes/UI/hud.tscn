@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6cvpkvpmcqi7"]
-
-[ext_resource type="Texture2D" uid="uid://dsii3l80gvp3i" path="res://Assets/textures/UI/snowflake.png" id="1_rte67"]
+[gd_scene format=3 uid="uid://b6cvpkvpmcqi7"]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -18,7 +16,8 @@ grow_vertical = 2
 [node name="Node2D" type="Node2D" parent="CenterContainer"]
 
 [node name="Snowflake" type="Sprite2D" parent="CenterContainer"]
-texture = ExtResource("1_rte67")
+position = Vector2(0, 9.50001)
+scale = Vector2(20, 15.0313)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 24.0

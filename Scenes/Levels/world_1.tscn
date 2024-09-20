@@ -15,10 +15,12 @@ background_color = Color(0.447551, 0.447551, 0.447551, 1)
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
 reflected_light_source = 1
+fog_enabled = true
 fog_mode = 1
-fog_density = 1.0
+fog_light_energy = 7.86
+fog_density = 0.5
 fog_depth_begin = 1.0
-fog_depth_end = 6.0
+fog_depth_end = 10.0
 
 [node name="World1" type="Node3D"]
 
@@ -137,4 +139,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 11)
 
 [node name="SnowWeather" parent="." instance=ExtResource("8_p0jiu")]
 transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
-visible = false
