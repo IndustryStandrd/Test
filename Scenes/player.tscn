@@ -1,11 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://dco7iuj7hxyyu"]
+[gd_scene load_steps=6 format=3 uid="uid://cqkm4kx331t4e"]
 
 [ext_resource type="Script" path="res://Scenes/Player.gd" id="1_d5h4e"]
 [ext_resource type="Script" path="res://Scenes/PlayerInteract.gd" id="2_3575x"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_a7gif"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_od0vm"]
+albedo_color = Color(0, 1, 1, 1)
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6e8c1"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_a7gif"]
+material = SubResource("StandardMaterial3D_od0vm")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dyfjs"]
+size = Vector3(0.814087, 1.81138, 0.855286)
 
 [node name="Player" type="Node3D" groups=["player"]]
 
@@ -18,7 +23,8 @@ script = ExtResource("1_d5h4e")
 mesh = SubResource("CapsuleMesh_a7gif")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
-shape = SubResource("CapsuleShape3D_6e8c1")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0126343, -0.0112262, -0.00485229)
+shape = SubResource("BoxShape3D_dyfjs")
 
 [node name="GroundCheck" type="RayCast3D" parent="Player"]
 target_position = Vector3(0, -1.1, 0)

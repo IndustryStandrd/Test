@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btl2i8ntrot64"
-path="res://.godot/imported/capacitors.png-ab935fcea7d872d796e15be77d1d7fde.ctex"
+path="res://.godot/imported/capacitors.png-31b7730c408d7630306c4f83d91bde9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/items/capacitors.png"
-dest_files=["res://.godot/imported/capacitors.png-ab935fcea7d872d796e15be77d1d7fde.ctex"]
+source_file="res://Assets/textures/items/capacitors.png"
+dest_files=["res://.godot/imported/capacitors.png-31b7730c408d7630306c4f83d91bde9e.ctex"]
 
 [params]
 

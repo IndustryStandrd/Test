@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce2v8ulioj7hw"]
+
+[ext_resource type="PackedScene" uid="uid://uwdoa3xbyowb" path="res://Assets/Models/landscape/RoadStr.glb" id="1_gyrkf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m285i"]
+size = Vector3(8.00189, 0.0640907, 7.99402)
+
+[node name="RoadStr" type="StaticBody3D"]
+
+[node name="RoadStr" parent="." instance=ExtResource("1_gyrkf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.15527e-05, -0.0320873, -6.10352e-05)
+shape = SubResource("BoxShape3D_m285i")

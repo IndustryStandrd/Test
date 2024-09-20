@@ -11,19 +11,19 @@ config_version=5
 [application]
 
 config/name="Test"
-run/main_scene="res://Scenes/mainscene.tscn"
+run/main_scene="res://Scenes/Levels/world_1.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 PlayerInteract="res://Scenes/PlayerInteract.gd"
-DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=640
+window/size/viewport_height=480
+window/size/mode=2
 window/stretch/scale_mode="integer"
 
 [dotnet]
@@ -37,7 +37,11 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/debug_menu/plugin.cfg")
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
+
+[filesystem]
+
+import/fbx2gltf/enabled=false
 
 [global_group]
 
@@ -101,10 +105,11 @@ Inventory={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-lights_and_shadows/directional_shadow/soft_shadow_filter_quality=5
-lights_and_shadows/directional_shadow/16_bits=false
-environment/screen_space_reflection/roughness_quality=0
-anti_aliasing/quality/use_taa=true
+textures/default_filters/anisotropic_filtering_level=0
+lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv=0
+lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv=0
+lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv=0
+lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv=0
 
 [shader_globals]
 

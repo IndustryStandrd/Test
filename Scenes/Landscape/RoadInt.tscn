@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://bx01jwv5qlrm0"]
+
+[ext_resource type="PackedScene" uid="uid://bgvhk70sfo0m7" path="res://Assets/Models/landscape/roadint.glb" id="1_ruit8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_25jpp"]
+size = Vector3(9.99982, 0.201416, 10.003)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_glvgn"]
+size = Vector3(1.00851, 0.210022, 1.00398)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pxqwb"]
+size = Vector3(1.00197, 0.234222, 1.00643)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g2r30"]
+size = Vector3(0.99746, 0.235718, 0.997505)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ne37o"]
+size = Vector3(1.00782, 0.228485, 0.994758)
+
+[node name="RoadInt" type="StaticBody3D"]
+
+[node name="roadint" parent="." instance=ExtResource("1_ruit8")]
+
+[node name="CollsionMainRoad" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000941757, -0.100952, 0.00050116)
+shape = SubResource("BoxShape3D_25jpp")
+
+[node name="Sidewalk1" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49951, 0.000335697, 4.50194)
+shape = SubResource("BoxShape3D_glvgn")
+
+[node name="Sidewalk2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50206, -0.0062407, 4.50098)
+shape = SubResource("BoxShape3D_pxqwb")
+
+[node name="Sidewalk3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50131, -0.0108032, -4.49915)
+shape = SubResource("BoxShape3D_g2r30")
+
+[node name="Sidewalk4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50211, -0.0116121, -4.50081)
+shape = SubResource("BoxShape3D_ne37o")

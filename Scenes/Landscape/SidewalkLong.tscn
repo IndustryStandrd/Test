@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6npp7btkdbu"]
+
+[ext_resource type="PackedScene" uid="uid://3a3cy0rb5277" path="res://Assets/Models/landscape/SidewalkLong.glb" id="1_knoub"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_46xp3"]
+size = Vector3(1.01965, 0.170441, 8.00751)
+
+[node name="SidewalkLong" type="StaticBody3D"]
+
+[node name="SidewalkLong" parent="." instance=ExtResource("1_knoub")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.498353, 0.0203094, -0.00143433)
+shape = SubResource("BoxShape3D_46xp3")
