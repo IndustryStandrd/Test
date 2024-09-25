@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://es8nt1sypl5e"]
+[gd_scene load_steps=16 format=3 uid="uid://es8nt1sypl5e"]
 
 [ext_resource type="PackedScene" uid="uid://ccmq2k26rrfq0" path="res://Scenes/Player/player.tscn" id="1_p6v1i"]
 [ext_resource type="AudioStream" uid="uid://b0icbb64yi00h" path="res://Assets/Sounds/ambience/snowstorm.ogg" id="1_r5iu2"]
@@ -7,7 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://bx01jwv5qlrm0" path="res://Scenes/Landscape/RoadInt.tscn" id="3_ogadi"]
 [ext_resource type="PackedScene" uid="uid://c6npp7btkdbu" path="res://Scenes/Landscape/SidewalkLong.tscn" id="4_tlu65"]
 [ext_resource type="PackedScene" uid="uid://1chveqr56v5p" path="res://Scenes/Furniture/wood_crate.tscn" id="5_gvynn"]
+[ext_resource type="PackedScene" uid="uid://baoup0uafjwm7" path="res://Assets/Models/furniture/lantern.glb" id="7_ppr2o"]
 [ext_resource type="PackedScene" uid="uid://vfss7juhjpeg" path="res://Scenes/Nature/snow_weather.tscn" id="8_p0jiu"]
+[ext_resource type="PackedScene" uid="uid://p7rvn1tob52e" path="res://Assets/Models/furniture/PCtower.glb" id="9_besas"]
+[ext_resource type="PackedScene" uid="uid://dj5hpkjx157t5" path="res://Assets/Models/items/gascan.glb" id="10_d2prc"]
+[ext_resource type="PackedScene" uid="uid://cn1jdnv0vxru7" path="res://Assets/Models/furniture/utilitypole.glb" id="11_cvn6i"]
+[ext_resource type="PackedScene" uid="uid://chbmo5oiflt5x" path="res://Assets/Models/furniture/buildingtest.glb" id="12_ch42s"]
+[ext_resource type="PackedScene" uid="uid://dl1xe60ydtxos" path="res://Assets/Models/furniture/radio.glb" id="13_ngxo8"]
 
 [sub_resource type="Environment" id="Environment_woaml"]
 background_mode = 3
@@ -18,7 +24,7 @@ reflected_light_source = 1
 fog_enabled = true
 fog_mode = 1
 fog_light_energy = 7.86
-fog_density = 0.5
+fog_density = 0.1096
 fog_depth_begin = 1.0
 fog_depth_end = 10.0
 
@@ -126,6 +132,9 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, 
 [node name="SidewalkLong18" parent="RoadSidewalks" instance=ExtResource("4_tlu65")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17, 0, 22)
 
+[node name="lantern" parent="RoadSidewalks" instance=ExtResource("7_ppr2o")]
+transform = Transform3D(1.80517, 0, -0.861022, 0, 2, 0, 0.861022, 0, 1.80517, 0.437439, 1.22644, 10.604)
+
 [node name="Objects" type="Node" parent="."]
 
 [node name="WoodCreate3" parent="Objects" instance=ExtResource("5_gvynn")]
@@ -139,3 +148,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 11)
 
 [node name="SnowWeather" parent="." instance=ExtResource("8_p0jiu")]
 transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
+
+[node name="PCtower2" parent="." instance=ExtResource("9_besas")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1, 0, 9.74371)
+
+[node name="gascan" parent="." instance=ExtResource("10_d2prc")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -0.0257263, -4.38429e-05, 9.82745)
+
+[node name="utilitypole" parent="." instance=ExtResource("11_cvn6i")]
+transform = Transform3D(1.20972e-05, -0.00698129, -1.99999, -0.00349064, 1.99998, -0.0069813, 2, 0.00349066, -8.74222e-08, -4.57092, 0.105514, 10.5761)
+
+[node name="buildingtest" parent="." instance=ExtResource("12_ch42s")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 0, 9)
+
+[node name="buildingtest2" parent="." instance=ExtResource("12_ch42s")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 0, 2.9128)
+
+[node name="buildingtest3" parent="." instance=ExtResource("12_ch42s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 25)
+
+[node name="buildingtest4" parent="." instance=ExtResource("12_ch42s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 25)
+
+[node name="radio" parent="." instance=ExtResource("13_ngxo8")]
+transform = Transform3D(0.547899, 0, -0.836544, 0, 1, 0, 0.836544, 0, 0.547899, 1.7558, 1.22815, 8.8822)
