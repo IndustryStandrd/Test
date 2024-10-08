@@ -17,7 +17,7 @@ size = Vector3(0.99746, 0.235718, 0.997505)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ne37o"]
 size = Vector3(1.00782, 0.228485, 0.994758)
 
-[node name="RoadInt" type="StaticBody3D"]
+[node name="RoadInt" type="StaticBody3D" groups=["concrete_footsteps"]]
 
 [node name="roadint" parent="." instance=ExtResource("1_ruit8")]
 

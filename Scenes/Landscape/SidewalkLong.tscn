@@ -5,7 +5,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_46xp3"]
 size = Vector3(1.01965, 0.170441, 8.00751)
 
-[node name="SidewalkLong" type="StaticBody3D"]
+[node name="SidewalkLong" type="StaticBody3D" groups=["concrete_footsteps"]]
 
 [node name="SidewalkLong" parent="." instance=ExtResource("1_knoub")]
 

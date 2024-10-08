@@ -5,7 +5,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_m285i"]
 size = Vector3(8.00189, 0.0640907, 7.99402)
 
-[node name="RoadStr" type="StaticBody3D"]
+[node name="RoadStr" type="StaticBody3D" groups=["concrete_footsteps"]]
 
 [node name="RoadStr" parent="." instance=ExtResource("1_gyrkf")]
 

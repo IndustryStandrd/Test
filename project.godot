@@ -23,7 +23,6 @@ PlayerInteract="res://Scenes/PlayerInteract.gd"
 
 window/size/viewport_width=640
 window/size/viewport_height=480
-window/size/mode=2
 window/stretch/scale_mode="integer"
 
 [dotnet]
@@ -45,7 +44,9 @@ import/fbx2gltf/enabled=false
 
 [global_group]
 
-FootStepGroups="This assigns walkable surfaces with appropriate footstep sounds."
+concrete_footsteps="Concrete group for footsteps"
+wood_footsteps="Wood sound for footsteps"
+grass_footsteps="Grass/dirt footstep sounds"
 
 [input]
 

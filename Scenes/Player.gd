@@ -11,7 +11,7 @@ var speed
 @export var jump_velocity = 6.5
 @export var gravity = 20.0
 @export var sensitivity = 0.004
-
+@export var is_moving = false
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var player_interact = $Head/Camera3D/PlayerInteract
@@ -73,6 +73,26 @@ func _physics_process(delta):
 	camera.transform.origin = _headbob(t_bob)
 	move_and_slide()
 	
+	# changes the is_moving variable to true or false based on whether player is moving
+	if Input.is_action_pressed("Forward"):
+		is_moving = true
+	elif Input.is_action_pressed("Back"):
+		is_moving = true
+	elif Input.is_action_pressed("Left"):
+		is_moving = true
+	elif Input.is_action_pressed("Right"):
+		is_moving = true
+	else:
+		is_moving = false
+
+#Foot Steps
+#	if is_moving == true and is_on_floor():
+		#play sound effect
+#		print("I AM WALKING FOOTSTEPS FOOTSTEPS")
+#	else:
+#		print("Either not walking or I am jumping")
+
+
 func _process(delta):
 	#This portion prints opening to the log if player presses the interact key while also looking at a collision object
 	if player_interact.is_colliding() and Input.is_action_just_pressed("Interact"):
@@ -86,19 +106,21 @@ func _process(delta):
 				print("Target %s is not interactable" % [interaction_target])
 		else:
 			print("No interaction target")
+			
 
-#Implementing footsteps - player_groundcamera is the raycast for the player that aims at the ground
+
+
+
+#player_groundcamera is the raycast for the player that aims at the ground
 #will be used to check which group the ground they are on top of is part of and play the correct footsteps
+#get_groups is an array
 	if player_groundcamera.is_colliding():
-		var player_terrain = player_groundcamera.get_collider().get_parent()
-#		print("I am on the ground")
-#	else: 
-#		print("I am not on the ground")
-
-#Function will hold player footsteps and where they should play
-func player_footsteps():
-	null
-
+		var player_terrain = player_groundcamera.get_collider().get_groups()
+		print(player_terrain)
+		if "concrete_footsteps" in player_terrain:
+			print("tested")
+		elif "wood_footsteps" in player_terrain:
+			print("wood tested")
 
 #function actually implements headbob using sine wave
 func _headbob(time) -> Vector3:

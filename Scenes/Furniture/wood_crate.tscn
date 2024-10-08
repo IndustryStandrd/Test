@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_t18t4"]
 size = Vector3(1.21765, 1.22583, 1.21509)
 
-[node name="WoodCreate" type="RigidBody3D"]
+[node name="WoodCreate" type="RigidBody3D" groups=["wood_footsteps"]]
 script = ExtResource("1_cxp3r")
 
 [node name="crate" parent="." instance=ExtResource("1_qsiyc")]
