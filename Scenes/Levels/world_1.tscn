@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://es8nt1sypl5e"]
+[gd_scene load_steps=18 format=3 uid="uid://es8nt1sypl5e"]
 
 [ext_resource type="PackedScene" uid="uid://ccmq2k26rrfq0" path="res://Scenes/Player/player.tscn" id="1_p6v1i"]
 [ext_resource type="AudioStream" uid="uid://b0icbb64yi00h" path="res://Assets/Sounds/ambience/snowstorm.ogg" id="1_r5iu2"]
@@ -14,6 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://cn1jdnv0vxru7" path="res://Assets/Models/furniture/utilitypole.glb" id="11_cvn6i"]
 [ext_resource type="PackedScene" uid="uid://chbmo5oiflt5x" path="res://Assets/Models/furniture/buildingtest.glb" id="12_ch42s"]
 [ext_resource type="PackedScene" uid="uid://dl1xe60ydtxos" path="res://Assets/Models/furniture/radio.glb" id="13_ngxo8"]
+[ext_resource type="PackedScene" uid="uid://c3vtncyoyok41" path="res://Assets/Models/furniture/VHS Tape.glb" id="15_r2l4e"]
+[ext_resource type="PackedScene" uid="uid://c0oe4kmvplsh4" path="res://Assets/Models/furniture/TV1.glb" id="16_ashpi"]
 
 [sub_resource type="Environment" id="Environment_woaml"]
 background_mode = 3
@@ -45,7 +47,11 @@ parameters/looping = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_woaml")
 
+[node name="SnowWeather" parent="." instance=ExtResource("8_p0jiu")]
+transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
+
 [node name="Player" parent="." instance=ExtResource("1_p6v1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04651, 0.297241, 17.7754)
 
 [node name="RoadSidewalks" type="Node" parent="."]
 
@@ -146,9 +152,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
 [node name="WoodCreate" parent="Objects" instance=ExtResource("5_gvynn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 11)
 
-[node name="SnowWeather" parent="." instance=ExtResource("8_p0jiu")]
-transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
-
 [node name="PCtower2" parent="." instance=ExtResource("9_besas")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1, 0, 9.74371)
 
@@ -172,3 +175,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 25)
 
 [node name="radio" parent="." instance=ExtResource("13_ngxo8")]
 transform = Transform3D(0.547899, 0, -0.836544, 0, 1, 0, 0.836544, 0, 0.547899, 1.7558, 1.22815, 8.8822)
+
+[node name="VHS Tape" parent="." instance=ExtResource("15_r2l4e")]
+transform = Transform3D(0.790583, 0, -0.612355, 0, 1, 0, 0.612355, 0, 0.790583, -0.431458, 1.22406, 11.3772)
+
+[node name="TV1" parent="." instance=ExtResource("16_ashpi")]
+transform = Transform3D(0.544873, 0, -0.838518, 0, 1, 0, 0.838518, 0, 0.544873, -2.97839, 1.24408, 11.3107)
