@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddd0m547t6j34"
-path="res://.godot/imported/carbattery.png-3d4cb58e397b43486a32197ce81853a8.ctex"
+path="res://.godot/imported/carbattery.png-75f57b6147becc46bcdf5c81bae411d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/items/carbattery.png"
-dest_files=["res://.godot/imported/carbattery.png-3d4cb58e397b43486a32197ce81853a8.ctex"]
+source_file="res://Assets/Textures/items/carbattery.png"
+dest_files=["res://.godot/imported/carbattery.png-75f57b6147becc46bcdf5c81bae411d9.ctex"]
 
 [params]
 

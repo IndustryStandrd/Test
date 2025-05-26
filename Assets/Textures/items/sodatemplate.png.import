@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2ldsdtn4sqcv"
-path="res://.godot/imported/sodatemplate.png-35be33cc836c19ee66b00140a40a416c.ctex"
+path="res://.godot/imported/sodatemplate.png-70f011cbec034f41d6e335b345e34cf7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/items/sodatemplate.png"
-dest_files=["res://.godot/imported/sodatemplate.png-35be33cc836c19ee66b00140a40a416c.ctex"]
+source_file="res://Assets/Textures/items/sodatemplate.png"
+dest_files=["res://.godot/imported/sodatemplate.png-70f011cbec034f41d6e335b345e34cf7.ctex"]
 
 [params]
 

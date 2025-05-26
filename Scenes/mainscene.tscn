@@ -2,8 +2,6 @@
 
 [ext_resource type="AudioStream" uid="uid://bp25tvfej0wn8" path="res://Assets/Sounds/music/eerie-music-whisper-in-the-dark-213943.mp3" id="1_ttv5l"]
 [ext_resource type="PackedScene" uid="uid://cqkm4kx331t4e" path="res://Scenes/player.tscn" id="2_uogh3"]
-[ext_resource type="PackedScene" path="res://Scenes/Landscape/roadstraight.tscn" id="3_6pqes"]
-[ext_resource type="PackedScene" uid="uid://c8vpn4i0t16h4" path="res://Assets/Models/landscape/roadstraight.tscn" id="9_xokmd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ukkco"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -22,6 +20,12 @@ volumetric_fog_density = 0.0767
 volumetric_fog_albedo = Color(1, 1, 0.956863, 1)
 volumetric_fog_length = 23.04
 
+[sub_resource type="Resource" id="Resource_tcjsh"]
+metadata/__load_path__ = "res://Scenes/Landscape/roadstraight.tscn"
+
+[sub_resource type="Resource" id="Resource_a3v7h"]
+metadata/__load_path__ = "res://Assets/Models/landscape/roadstraight.tscn"
+
 [node name="Environment" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -36,7 +40,7 @@ parameters/looping = true
 [node name="Player" parent="." instance=ExtResource("2_uogh3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0783747, 1.32729, 0.0245416)
 
-[node name="roadstraight" parent="." instance=ExtResource("3_6pqes")]
+[node name="roadstraight" parent="."]
 
-[node name="roadstraight2" parent="." instance=ExtResource("9_xokmd")]
+[node name="roadstraight2" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.40133, 0, 7.9353)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cqkm4kx331t4e"]
 
-[ext_resource type="Script" path="res://Scenes/Player.gd" id="1_d5h4e"]
-[ext_resource type="Script" path="res://Scenes/PlayerInteract.gd" id="2_3575x"]
+[ext_resource type="Script" uid="uid://ciqldelb35p3u" path="res://Scenes/Player.gd" id="1_d5h4e"]
+[ext_resource type="Script" uid="uid://b317swcijfvo0" path="res://Scenes/PlayerInteract.gd" id="2_3575x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_od0vm"]
 albedo_color = Color(0, 1, 1, 1)

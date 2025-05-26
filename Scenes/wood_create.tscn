@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://birw4dp7bb81u"]
 
-[ext_resource type="Script" path="res://Scenes/wood_create.gd" id="1_cxp3r"]
+[ext_resource type="Script" uid="uid://dalhnyf1qimli" path="res://Scenes/wood_create.gd" id="1_cxp3r"]
 [ext_resource type="PackedScene" uid="uid://duy0hbsj3dxyo" path="res://Assets/Models/furniture/crate.glb" id="1_qsiyc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t18t4"]

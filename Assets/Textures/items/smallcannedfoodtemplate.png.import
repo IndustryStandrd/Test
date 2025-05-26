@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj1ibdr57mils"
-path="res://.godot/imported/smallcannedfoodtemplate.png-8b057fca6e791f53173d02d04e46dc6c.ctex"
+path="res://.godot/imported/smallcannedfoodtemplate.png-7b9e942a54423bda604960f42ab9efa4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/items/smallcannedfoodtemplate.png"
-dest_files=["res://.godot/imported/smallcannedfoodtemplate.png-8b057fca6e791f53173d02d04e46dc6c.ctex"]
+source_file="res://Assets/Textures/items/smallcannedfoodtemplate.png"
+dest_files=["res://.godot/imported/smallcannedfoodtemplate.png-7b9e942a54423bda604960f42ab9efa4.ctex"]
 
 [params]
 

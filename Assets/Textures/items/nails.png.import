@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dec8bmfc4i8v2"
-path="res://.godot/imported/nails.png-6ad41679dc0358b6baa1b2fd3883ad8e.ctex"
+path="res://.godot/imported/nails.png-4526b895ad7e98c7e51bcf1a4df9641a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/items/nails.png"
-dest_files=["res://.godot/imported/nails.png-6ad41679dc0358b6baa1b2fd3883ad8e.ctex"]
+source_file="res://Assets/Textures/items/nails.png"
+dest_files=["res://.godot/imported/nails.png-4526b895ad7e98c7e51bcf1a4df9641a.ctex"]
 
 [params]
 
