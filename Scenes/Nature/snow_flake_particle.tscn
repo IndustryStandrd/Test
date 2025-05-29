@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://xa7cusx060ee"]
-
-[ext_resource type="PackedScene" uid="uid://t51r4bs6ot8y" path="res://Assets/Models/particles/snowflake.glb" id="1_mvowy"]
-
-[node name="SnowFlakeParticle" type="Node3D"]
-
-[node name="snowflake" parent="." instance=ExtResource("1_mvowy")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.0407104, 0, -0.0388184)

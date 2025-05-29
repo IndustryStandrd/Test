@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://es8nt1sypl5e"]
+[gd_scene load_steps=17 format=3 uid="uid://es8nt1sypl5e"]
 
 [ext_resource type="PackedScene" uid="uid://ccmq2k26rrfq0" path="res://Scenes/Player/player.tscn" id="1_p6v1i"]
 [ext_resource type="AudioStream" uid="uid://b0icbb64yi00h" path="res://Assets/Sounds/ambience/snowstorm.ogg" id="1_r5iu2"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://c6npp7btkdbu" path="res://Scenes/Landscape/SidewalkLong.tscn" id="4_tlu65"]
 [ext_resource type="PackedScene" uid="uid://1chveqr56v5p" path="res://Scenes/Furniture/wood_crate.tscn" id="5_gvynn"]
 [ext_resource type="PackedScene" uid="uid://baoup0uafjwm7" path="res://Assets/Models/furniture/lantern.glb" id="7_ppr2o"]
-[ext_resource type="PackedScene" uid="uid://vfss7juhjpeg" path="res://Scenes/Nature/snow_weather.tscn" id="8_p0jiu"]
 [ext_resource type="PackedScene" uid="uid://p7rvn1tob52e" path="res://Assets/Models/furniture/PCtower.glb" id="9_besas"]
 [ext_resource type="PackedScene" uid="uid://dj5hpkjx157t5" path="res://Assets/Models/items/gascan.glb" id="10_d2prc"]
 [ext_resource type="PackedScene" uid="uid://cn1jdnv0vxru7" path="res://Assets/Models/furniture/utilitypole.glb" id="11_cvn6i"]
@@ -46,9 +45,6 @@ parameters/looping = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_woaml")
-
-[node name="SnowWeather" parent="." instance=ExtResource("8_p0jiu")]
-transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
 
 [node name="Player" parent="." instance=ExtResource("1_p6v1i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04651, 0.297241, 17.7754)

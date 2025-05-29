@@ -18,14 +18,14 @@ turbulence_enabled = true
 turbulence_noise_strength = 0.67
 turbulence_noise_scale = 2.832
 
-[sub_resource type="BoxMesh" id="BoxMesh_dbgxh"]
+[sub_resource type="BoxMesh" id="BoxMesh_w8835"]
 
 [node name="SnowWeather" type="Node3D"]
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
-transform = Transform3D(4653.31, 0, 0, 0, 1.20602, 0, 0, 0, 3950.31, 0, 18.6281, 0)
+transform = Transform3D(356, 0, 0, 0, 1.20602, 0, 0, 0, 270.536, 0.30899, 18.6587, 0.217636)
 amount = 20000
 lifetime = 6.0
 fixed_fps = 15
 process_material = SubResource("ParticleProcessMaterial_wy212")
-draw_pass_1 = SubResource("BoxMesh_dbgxh")
+draw_pass_1 = SubResource("BoxMesh_w8835")
