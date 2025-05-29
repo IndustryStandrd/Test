@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6ll86ash5ru"]
+
+[ext_resource type="Script" uid="uid://4vnbqbkb6ht0" path="res://hideout.gd" id="1_8pcij"]
+
+[node name="Hideout" type="Node3D"]
+script = ExtResource("1_8pcij")
